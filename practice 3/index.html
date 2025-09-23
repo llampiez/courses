@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Checkout Page</title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="cm-header">
+      <img
+        src="https://btholt.github.io/complete-intro-to-web-dev-v3/images/coffee_masters_logo.png"
+        alt="Coffee Masters Logo" />
+      <span>Coffee Masters</span>
+    </header>
+    <div class="cm-container">
+      <section class="cm-section cm-list">
+        <h2>ITEMS</h2>
+        <ul class="cm-item-list">
+          <li class="cm-item">
+            <p>1x</p>
+            <div class="cm-item-details">
+              <p>Cappuccino</p>
+              <div class="cm-item-options">
+                <p>Lite Foam</p>
+              </div>
+            </div>
+            <p>$3.35</p>
+          </li>
+          <li class="cm-item">
+            <p>1x</p>
+            <div class="cm-item-details">
+              <p>Cappuccino</p>
+              <div class="cm-item-options">
+                <p>Lite Milk</p>
+                <p>Double espresso</p>
+              </div>
+            </div>
+            <p>$3.85</p>
+          </li>
+          <li class="cm-item">
+            <p>1x</p>
+            <div class="cm-item-details">
+              <p>Croissant</p>
+              <div class="cm-item-options">
+                <p>Butter</p>
+              </div>
+            </div>
+            <p>$2.45</p>
+          </li>
+        </ul>
+      </section>
+      <section class="cm-section cm-order">
+        <h2>NAME</h2>
+        <div class="cm-input-group">
+          <label class="cm-label">Name for order</label>
+          <input class="cm-input" type="text" />
+        </div>
+      </section>
+      <section class="cm-section cm-payment">
+        <h2>PAYMENT</h2>
+        <div class="cm-input-payment">
+          <div class="cm-input-group">
+            <label class="cm-label">Card number</label>
+            <input class="cm-input" type="text" />
+          </div>
+          <div class="cm-input-group">
+            <label class="cm-label">CCV number</label>
+            <input class="cm-input cm-input-ccv" type="text" />
+          </div>
+        </div>
+      </section>
+    </div>
+    <footer class="place-order">
+      <section class="section-total">
+        <div class="mount">
+          <span>Subtotal:</span>
+          <span>$9.65</span>
+        </div>
+        <div class="mount">
+          <span>Tax:</span>
+          <span>$0.82</span>
+        </div>
+        <div class="mount mount-bold">
+          <span>Total:</span>
+          <span>$10.47</span>
+        </div>
+      </section>
+      <button class="btn-place-order">Place order</button>
+    </footer>
+  </body>
+</html>

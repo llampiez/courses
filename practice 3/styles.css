@@ -1,0 +1,159 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+  margin: 0px;
+  background-color: #eff0ef;
+}
+
+p {
+  margin: 0px;
+}
+
+.cm-header {
+  background-color: #43281c;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 5px;
+  justify-content: center;
+  padding: 20px 0px;
+}
+
+.cm-header span {
+  color: #fbf2c0;
+}
+
+.cm-header img {
+  height: 50px;
+  width: 50px;
+}
+
+.cm-container {
+  margin: 50px 20px 20px 20px;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+    'list order'
+    'list payment';
+  row-gap: 30px;
+  column-gap: 60px;
+}
+
+.cm-section {
+  background-color: #eee1d5;
+  padding: 25px 30px;
+  border-radius: 20px;
+  box-shadow: 0px 5px 5px lightgray;
+}
+
+.cm-section h2 {
+  color: #804e1f;
+  font-weight: normal;
+  font-size: 20px;
+  margin: 0px 0px 20px 0px;
+}
+
+.cm-list {
+  grid-area: list;
+  margin-bottom: 50px;
+}
+
+.cm-order {
+  grid-area: order;
+}
+
+.cm-payment {
+  grid-area: payment;
+}
+
+.cm-item-list {
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+  display: flex;
+  flex-direction: column;
+}
+
+.cm-item {
+  display: grid;
+  grid-template-columns: 40px 1fr 60px;
+  padding: 20px 0px;
+}
+
+.cm-item:nth-child(even) {
+  border-top: 1px solid #804e1f;
+  border-bottom: 1px solid #804e1f;
+}
+
+.cm-item-options {
+  color: #804e1f;
+  font-size: 15px;
+}
+
+.cm-item-details p {
+  margin-bottom: 5px;
+}
+
+.cm-input-group {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.cm-input {
+  padding: 10px 30px;
+  border: 1px solid #804e1f;
+  border-radius: 20px;
+  background-color: #eee1d5;
+}
+
+.cm-label {
+  color: #804e1f;
+  font-size: 13px;
+  position: absolute;
+  background-color: #eee1d5;
+  padding: 0px 5px;
+  left: 25px;
+  top: -9px;
+}
+
+.cm-input-payment {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.cm-input-ccv {
+  width: 100px;
+}
+
+.place-order {
+  display: flex;
+  flex-direction: column;
+  margin: 160px 70px 20px 70px;
+  align-items: center;
+}
+
+.btn-place-order {
+  background-color: #deb993;
+  border: none;
+  border-radius: 50px;
+  padding: 10px;
+  width: -moz-available;
+}
+
+.mount {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.section-total {
+  width: 500px;
+  font-size: 15px;
+}
+
+.mount-bold {
+  font-weight: bold;
+}
