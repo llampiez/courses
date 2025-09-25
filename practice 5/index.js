@@ -19,23 +19,8 @@ ${this.location.country}`;
   },
 };
 
-const test1 = {
-  name: {
-    first: 'Luis',
-    last: 'Lopez',
-  },
-  location: {
-    streetNumber: 100,
-    street: 'G',
-    city: 'Valencia',
-    state: 'Carabobo',
-    zipCode: 2010,
-    country: 'VE',
-  },
-};
-
-test1.getAddress = me.getAddress;
+const test1 = me.getAddress.bind(me);
 
 // console.log(me.getAddress());
 
-console.log(test1.getAddress());
+console.log(test1());
